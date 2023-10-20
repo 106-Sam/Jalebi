@@ -73,6 +73,17 @@ e<!DOCTYPE html>
 <p class="p1">Drag the papers to move!</p>
 </div>
 <!-- partial -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var audio = document.getElementById('backgroundMusic');
+        audio.play().catch(function(error) {
+            // Autoplay was prevented, show a play button and allow user to start audio manually
+            // You can create a play button element and add event listener to start audio on click
+            // Example: document.getElementById('playButton').addEventListener('click', function() { audio.play(); });
+        });
+    });
+</script>
+
   <script  src="./mobile.js"></script>
 </body>
 </html>
