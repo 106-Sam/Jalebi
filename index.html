@@ -6,11 +6,11 @@ e<!DOCTYPE html>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
 </head>
 <body>
- <audio id="backgroundMusic" loop>
+ <audio autoplay loop>
     <source src="./jalebi.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-  <button id="playButton">Play Music</button>
+
   <div class="paper image">
     <p>You are going to make your parents proud ✨ </p>
       <p> I'll always be there for you 😘 </p>
@@ -74,22 +74,6 @@ e<!DOCTYPE html>
 <p class="p1">Drag the papers to move!</p>
 </div>
 <!-- partial -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var audio = document.getElementById('backgroundMusic');
-        var playButton = document.getElementById('playButton');
-
-        playButton.addEventListener('click', function() {
-            audio.play().catch(function(error) {
-                // Autoplay was prevented
-                // Handle the error and show a message to the user, if needed
-            });
-            playButton.style.display = 'none'; // Hide the play button after clicking
-        });
-    });
-</script>
-
-
   <script  src="./mobile.js"></script>
 </body>
 </html>
